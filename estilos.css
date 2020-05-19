@@ -1,0 +1,146 @@
+/* ------------------ ESTRUCTURA ------------------ */
+body{
+  background-color: #E5E5E5;
+}
+.grid-layout {
+	display: grid;
+	grid-gap: 10px;
+}
+
+.item {
+	display: block;
+	background-color: #72CAC1;
+	/*border-radius: 4px;*/
+	color: #fff;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.item-gris{
+  display: block;
+	background-color: #FFF;
+	/*border-radius: 4px;*/
+	color: #fff;
+	padding: 20px;
+	font-size: 20px;
+}
+
+#ejemploArea {
+	grid-template-columns: 0px 15% 1fr;
+	grid-template-rows: auto 600px 100px;
+
+	grid-template-areas: 
+		"aside aside header"
+		"aside aside content"
+		"aside aside content";
+	align-items: stretch;
+	justify-items: stretch;
+}
+
+#ejemploArea .item-gris.b {grid-area: header; }
+#ejemploArea .item.c {grid-area: aside; }
+#ejemploArea .item-gris.d {grid-area: content; }
+
+/* --------- NAV BAR -------------------*/
+.contenedor-flex{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+.vacio{
+  width:60% ;
+  height: auto;
+}
+
+ .item-menu-mas{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #F0F2FA;
+  margin-right: 20px;
+}
+.item-menu-buscador{
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color:  #F0F2FA;
+}
+.item-menu-nombre{
+  width: 200px;
+  height: 20px;
+  border-radius: 3px;
+  background-color:  #F0F2FA;
+  margin-right: 20px;
+}
+.item-menu-foto{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:  #F0F2FA;
+}
+
+/* ----------------------------*/
+
+/* --------- SIDEBAR -------------------*/
+.logo{
+  background-color: #F0F2FA;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 30px;
+  margin: 0 auto;
+}
+.contenedor-flex-sidebar{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.item-sidebar-menu{
+  width: 200px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #F0F2FA;
+  
+}
+.item-sidebar-icono{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:  #F0F2FA;
+  margin-right: 20px;
+
+}
+
+
+/* ------------------ ANIMACION ------------------ */
+@keyframes animacion-div{
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+/*ejemplo uno - verde  */
+.animacion {
+    background-color: #72CAC1;
+    background-image: linear-gradient(90deg,#72CAC1, #72BDB4, #72CAC1);
+    animation: animacion-div 8s ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+/*ejemplo uno - verde  */
+.animacion-gris {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(90deg,#FFFFFF, #F0F2FA, #FFFFFF);
+  animation: animacion-div 8s ease;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
