@@ -57,27 +57,27 @@ body{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #F0F2FA;
+  background-color: #FFF;
   margin-right: 20px;
 }
 .item-menu-buscador{
   width: 200px;
   height: 50px;
   border-radius: 5px;
-  background-color:  #F0F2FA;
+  background-color:  #FFF;
 }
 .item-menu-nombre{
   width: 200px;
   height: 20px;
   border-radius: 3px;
-  background-color:  #F0F2FA;
+  background-color:  #FFF;
   margin-right: 20px;
 }
 .item-menu-foto{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color:  #F0F2FA;
+  background-color:  #FFF;
 }
 
 /* ----------------------------*/
@@ -137,8 +137,8 @@ body{
 
 /*ejemplo uno - verde  */
 .animacion-gris {
-  background-color: #FFFFFF;
-  background-image: linear-gradient(90deg,#FFFFFF, #F0F2FA, #FFFFFF);
+  background-color: #F0F2FA;
+  background-image: linear-gradient(90deg,#F0F2FA, #F0F2FA, #F0F2FA);
   animation: animacion-div 8s ease;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
