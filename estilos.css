@@ -1,6 +1,12 @@
 /* ------------------ ESTRUCTURA ------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 body{
   background-color: #E5E5E5;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 .grid-layout {
 	display: grid;
@@ -143,4 +149,36 @@ body{
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+
+
+
+/* ---------------------- DASHBOARD -------------------------- */
+.contenedor-general{
+  display: flex;
+  justify-content: center;
+}
+.contenedor-prototipo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 150px;
+  background-color: #00B19D;
+  margin-right: 20px;
+  border-radius: 5px;
+  
+}
+.contenedor-prototipo h2{
+  color:white;
+}
+
+a{
+  text-decoration: none;
+}
+.contenedor-prototipo:hover{
+  background: #72CAC1
+}
+.volver{
+  color:  #00B19D;
 }
