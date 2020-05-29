@@ -129,7 +129,7 @@ body{
 .animacion {
     background-color: #72CAC1;
     background-image: linear-gradient(90deg,#72CAC1, #72BDB4, #72CAC1);
-    animation: animacion-div 8s ease;
+    animation: animacion-div 5s ease;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -139,7 +139,7 @@ body{
 .animacion-gris {
   background-color: #F0F2FA;
   background-image: linear-gradient(90deg,#F0F2FA, #F0F2FA, #F0F2FA);
-  animation: animacion-div 8s ease;
+  animation: animacion-div 5s ease;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   opacity: 0;
