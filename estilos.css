@@ -134,8 +134,8 @@ body{
 
 /*ejemplo uno - verde  */
 .animacion-gris {
-  background-color: #F0F2FA;
-  background-image: linear-gradient(90deg,#F0F2FA, #F0F2FA, #F0F2FA);
+  background-color: #eee;
+  background-image: linear-gradient(90deg,#eee, #eee, #eee);
   animation: animacion-div 5s ease;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
@@ -144,24 +144,51 @@ body{
 
 
 /* ------------------ ANIMACION OPCIÓN B------------------ */
-@keyframes progress {
+@keyframes wave {
   0% {
-      background-position: -200px 0;
+    background: linear-gradient(90deg, #F0F2FA  0%, #fff , #F0F2FA 40%);
   }
-
+  20% {
+    background: linear-gradient(90deg, #F0F2FA   10%, #fff , #F0F2FA);
+  }
+  40% {
+    background: linear-gradient(90deg, #F0F2FA  20%, #fff , #F0F2FA);
+  }
+  
+  60% {
+    background: linear-gradient(90deg, #F0F2FA   30%, #fff , #F0F2FA);
+  }
+  
+  80% {
+    background: linear-gradient(90deg, #F0F2FA  40%, #fff , #F0F2FA 20%);
+  }
+  
   100% {
-      background-position: calc(200px + 100%) 0;
+    background: linear-gradient(90deg, #F0F2FA  , #fff , #F0F2FA);
   }
+  
 }
 
 .animacion-dos {
-  animation: progress 8s ease-in-out infinite;
+  animation: wave 2s infinite linear;
   background-color: #eee;
-  background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
+  background-image: linear-gradient(90deg, #F0F2FA, #F0F2FA, #F0F2FA);
+
 }
 
-
-
+/* ------------- ANIMACION OPCION C ----------- */
+@keyframes change-color {  
+  0% { background-color: rgba(0,0,0, .08); }  
+  50% { background-color: rgba(0,0,0, .03); }  
+  100% { background-color: rgba(0,0,0, .08); }
+}
+.animacion-tres {
+  animation-name: change-color;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+}
 /* ---------------------- DASHBOARD -------------------------- */
 .contenedor-general{
   display: flex;
